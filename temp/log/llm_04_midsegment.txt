@@ -1,0 +1,20 @@
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  Triangle midsegment theorem
+============================================================
+  NL: Draw triangle ABC. Mark D as the midpoint of AB and E as the midpoint of AC. Draw segment DE. Label ...
+
+    [OK  ] A = (1, 5)
+    [OK  ] B = (-3, 0)
+    [OK  ] C = (5, 0)
+    [OK  ] poly1 = Polygon(A, B, C)
+    [OK  ] D = Midpoint(A, B)
+    [OK  ] E = Midpoint(A, C)
+    [OK  ] s_DE = Segment(D, E)
+    [OK  ] dist_DE = Distance(D, E)
+    [OK  ] dist_BC = Distance(B, C)
+  [LLM] DONE
+
+  Tool calls: 9 OK, 0 failed (of 9 total)
+  [SAVED] temp\llm_04_midsegment.png
