@@ -1,0 +1,35 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  Isosceles triangle + perpendicular bisector
+==============================================================
+  NL: Construct isosceles triangle ABC where AB = AC = 5 and BC = 6. Draw the perpendicular bisector of BC...
+
+    [OK  ] B = (-3, 0)
+           canvas: {"B": "point"}
+    [OK  ] C = (3, 0)
+           canvas: {"B": "point", "C": "point"}
+    [OK  ] A = (0, 4)
+           canvas: {"B": "point", "C": "point", "A": "point"}
+    [OK  ] s_AB = Segment(A, B)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment"}
+    [OK  ] s_AC = Segment(A, C)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment"}
+    [OK  ] s_BC = Segment(B, C)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment"}
+    [OK  ] perp_BC = PerpendicularBisector(B, C)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line"}
+    [OK  ] M = Intersect(perp_BC, s_BC, 1)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line", "M": "point"}
+    [OK  ] s_AM = Segment(A, M)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line", "M": "point"}
+    [OK  ] angle_AMB = Angle(A, M, B)
+           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line", "M": "point", "angle_AMB": "angle"}
+    [FAIL] [unknown tool: query_length]  -> Tool 'query_length' not implemented
+    [FAIL] [unknown tool: query_length]  -> Tool 'query_length' not implemented
+  [LLM] DONE
+
+  Tool calls: 10 OK, 2 failed (of 12 total)
+  Tokens in/out/total: 39452/366/40497
+  Timing TTFT=6.989s | submit->final=38.41s
+  [SAVED] temp/test_llm_stepwise_canvas/fig/sc_01_isosceles.png

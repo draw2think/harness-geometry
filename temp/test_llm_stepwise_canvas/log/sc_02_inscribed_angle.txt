@@ -1,0 +1,27 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  Inscribed angle theorem
+==============================================================
+  NL: Draw a circle with centre O and radius 3. Place three points A, B, C on the circle. Draw the inscrib...
+
+    [OK  ] O = (0, 0)
+           canvas: {"O": "point"}
+    [OK  ] c1 = Circle(O, 3)
+           canvas: {"O": "point", "c1": "circle"}
+    [OK  ] A = Point(c1)
+           canvas: {"O": "point", "c1": "circle", "A": "point"}
+    [OK  ] B = Point(c1)
+           canvas: {"O": "point", "c1": "circle", "A": "point", "B": "point"}
+    [OK  ] C = Point(c1)
+           canvas: {"O": "point", "c1": "circle", "A": "point", "B": "point", "C": "point"}
+    [OK  ] alpha = Angle(A, B, C)
+           canvas: {"O": "point", "c1": "circle", "A": "point", "B": "point", "C": "point", "alpha": "angle"}
+    [OK  ] beta = Angle(A, O, C)
+           canvas: {"O": "point", "c1": "circle", "A": "point", "B": "point", "C": "point", "alpha": "angle", "beta_{1}": "angle"}
+  [LLM] DONE
+
+  Tool calls: 7 OK, 0 failed (of 7 total)
+  Tokens in/out/total: 26344/225/27108
+  Timing TTFT=5.32s | submit->final=36.588s
+  [SAVED] temp/test_llm_stepwise_canvas/fig/sc_02_inscribed_angle.png

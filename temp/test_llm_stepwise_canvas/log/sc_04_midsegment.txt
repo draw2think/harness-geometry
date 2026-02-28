@@ -1,0 +1,31 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  Triangle midsegment theorem
+==============================================================
+  NL: Draw triangle ABC. Mark D as the midpoint of AB and E as the midpoint of AC. Draw segment DE. Label ...
+
+    [OK  ] A = (0, 0)
+           canvas: {"A": "point"}
+    [OK  ] B = (4, 0)
+           canvas: {"A": "point", "B": "point"}
+    [OK  ] C = (2, 4)
+           canvas: {"A": "point", "B": "point", "C": "point"}
+    [OK  ] poly1 = Polygon(A, B, C)
+           canvas: {"A": "point", "B": "point", "C": "point", "poly1": "triangle", "c": "segment", "a": "segment", "b": "segment"}
+    [OK  ] D = Midpoint(A, B)
+           canvas: {"A": "point", "B": "point", "C": "point", "poly1": "triangle", "c": "segment", "a": "segment", "b": "segment", "D": "point"}
+    [OK  ] E = Midpoint(A, C)
+           canvas: {"A": "point", "B": "point", "C": "point", "poly1": "triangle", "c": "segment", "a": "segment", "b": "segment", "D": "point", "E": "point"}
+    [OK  ] DE = Segment(D, E)
+           canvas: {"A": "point", "B": "point", "C": "point", "poly1": "triangle", "c": "segment", "a": "segment", "b": "segment", "D": "point", "E": "point", "DE": "segment"}
+    [OK  ] dist_DE = Distance(D, E)
+           canvas: {"A": "point", "B": "point", "C": "point", "poly1": "triangle", "c": "segment", "a": "segment", "b": "segment", "D": "point", "E": "point", "DE": "segment", "dist_DE": "numeric"}
+    [OK  ] dist_BC = Distance(B, C)
+           canvas: {"A": "point", "B": "point", "C": "point", "poly1": "triangle", "c": "segment", "a": "segment", "b": "segment", "D": "point", "E": "point", "DE": "segment", "dist_DE": "numeric", "dist_BC": "numeric"}
+  [LLM] DONE
+
+  Tool calls: 9 OK, 0 failed (of 9 total)
+  Tokens in/out/total: 32398/256/33158
+  Timing TTFT=6.321s | submit->final=32.109s
+  [SAVED] temp/test_llm_stepwise_canvas/fig/sc_04_midsegment.png
