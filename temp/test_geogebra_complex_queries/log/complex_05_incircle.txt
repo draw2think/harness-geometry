@@ -1,0 +1,29 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  5. Incircle Tangency – All Three Sides
+==============================================================
+  [setup/ok] A=(0,0)                                     `A = (0, 0)`
+  [setup/ok] B=(4,0)                                     `B = (4, 0)`
+  [setup/ok] C=(0,3)                                     `C = (0, 3)`
+  [setup/ok] tri = Polygon(A,B,C)                        `tri = Polygon(A, B, C)`
+  [setup/ok] inc = Incircle(A,B,C)                       `inc = Incircle(A, B, C)`
+  [setup/ok] l_AB = Line(A,B)                            `l_AB = Line(A, B)`
+  [setup/ok] l_BC = Line(B,C)                            `l_BC = Line(B, C)`
+  [setup/ok] l_CA = Line(C,A)                            `l_CA = Line(C, A)`
+
+  -- IsTangent: incircle tangent to each side --
+  [PASS] IsTangent(l_AB, inc)  AB: y=0       (true)              → qt1 = true  (expected True)
+  [PASS] IsTangent(l_BC, inc)  BC: 3x+4y=12  (true)              → qt2 = true  (expected True)
+  [PASS] IsTangent(l_CA, inc)  CA: x=0       (true)              → qt3 = true  (expected True)
+
+  -- Inradius = 1  (Area/s = 6/6) --
+  [PASS] Area(tri) = 6                                           → a_tri = 6  (expected 6.0000)
+  [PASS] Perimeter = 12                                          → p_tri = 12  (expected 12.0000)
+
+  -- All angles of triangle (sum check) --
+  [PASS] Angle at A (right angle = 90°)                          → ang_A = 90°  (expected 1.5708)
+  [PASS] Angle at B = arctan(3/4) ≈ 36.87°                       → ang_B = 36.87°  (expected 0.6435)
+  [PASS] Angle at C = arctan(4/3) ≈ 53.13°                       → ang_C = 53.13°  (expected 0.9273)
+
+  [SAVED] temp/complex_05_incircle.png

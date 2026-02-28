@@ -1,0 +1,15 @@
+GeoGebra initialized successfully via Selenium
+  [ok] `O = (0, 0)`
+  [ok] `A = (3, 0)`
+  [ok] `circ = Circle(O, A)`
+  [ok] `B = Point(circ)`
+  [FAIL(None)] `SetCoords(B, -1.5, -2.6)`
+  [ok] `C = Point(circ)`
+  [FAIL(None)] `SetCoords(C, -3, 0)`
+  [ok] `inscribed = Angle(A, B, C)`
+  [ok] `central = Angle(A, O, C)`
+  [ok] `sBA = Segment(B, A)`
+  [ok] `sBC = Segment(B, C)`
+  [ok] `sOA = Segment(O, A)`
+  [ok] `sOC = Segment(O, C)`
+  [SAVED] temp/test_geogebra_construct/fig/02_inscribed_angle_theorem.png

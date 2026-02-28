@@ -1,0 +1,11 @@
+GeoGebra initialized successfully via Selenium
+  [ok] `A = (1, 1)`
+  [ok] `B = (3, 1)`
+  [ok] `C = (2, 3)`
+  [ok] `tri = Polygon(A, B, C)`
+  [ok] `mirL = Line((4,0),(4,5))`
+  [ok] `triRef = Reflect(tri, mirL)`
+  [ok] `O = (0, 0)`
+  [ok] `triRot = Rotate(tri, pi/2, O)`
+  [ok] `triDil = Dilate(tri, 2, O)`
+  [SAVED] temp/test_geogebra_construct/fig/05_transformations.png

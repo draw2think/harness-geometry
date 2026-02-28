@@ -1,0 +1,30 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  3. Varignon's Theorem – Midpoint Parallelogram
+==============================================================
+  [setup/ok] A=(0,0)                                     `A = (0, 0)`
+  [setup/ok] B=(6,0)                                     `B = (6, 0)`
+  [setup/ok] C=(5,4)                                     `C = (5, 4)`
+  [setup/ok] D=(1,4)                                     `D = (1, 4)`
+  [setup/ok] quad = Polygon(A,B,C,D)                     `quad = Polygon(A, B, C, D)`
+  [setup/ok] E = Midpoint(A,B)                           `E = Midpoint(A, B)`
+  [setup/ok] F = Midpoint(B,C)                           `F = Midpoint(B, C)`
+  [setup/ok] G = Midpoint(C,D)                           `G = Midpoint(C, D)`
+  [setup/ok] H = Midpoint(D,A)                           `H = Midpoint(D, A)`
+  [setup/ok] mpoly = Polygon(E,F,G,H)                    `mpoly = Polygon(E, F, G, H)`
+  [setup/ok] lEF = Line(E,F)                             `lEF = Line(E, F)`
+  [setup/ok] lHG = Line(H,G)                             `lHG = Line(H, G)`
+  [setup/ok] lFG = Line(F,G)                             `lFG = Line(F, G)`
+  [setup/ok] lEH = Line(E,H)                             `lEH = Line(E, H)`
+
+  -- Parallelism of opposite sides --
+  [PASS] AreParallel(EF, HG)  (true)                             → qv1 = true  (expected True)
+  [PASS] AreParallel(FG, EH)  (true)                             → qv2 = true  (expected True)
+  [PASS] AreParallel(EF, FG)  (false – adjacent)                 → qv3 = false  (expected False)
+
+  -- Area: EFGH = ABCD / 2 --
+  [PASS] Area(ABCD) = 20                                         → a_quad = 20  (expected 20.0000)
+  [PASS] Area(EFGH) = 10                                         → a_mpoly = 10  (expected 10.0000)
+
+  [SAVED] temp/complex_03_varignon.png

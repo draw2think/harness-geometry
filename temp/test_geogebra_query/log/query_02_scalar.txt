@@ -1,0 +1,39 @@
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  Scalar Queries
+============================================================
+  [setup] O = (0,0)                                      `O = (0, 0)`
+  [setup] A = (4,0)                                      `A = (4, 0)`
+  [setup] B = (0,3)                                      `B = (0, 3)`
+  [setup] seg = Segment(O,A)                             `seg = Segment(O, A)`
+  [setup] tri = Polygon(O,A,B)                           `tri = Polygon(O, A, B)`
+  [setup] ang = Angle(A,O,B)                             `ang = Angle(A, O, B)`
+  [setup] l_h  = Line((0,0),(1,0))                       `l_h  = Line((0,0),(1,0))`
+  [setup] l_d  = Line((0,0),(1,1))                       `l_d  = Line((0,0),(1,1))`
+  [setup] l_AB = Line(A,B)                               `l_AB = Line(A, B)`
+  [setup] seg_AB = Segment(A,B)                          `seg_AB = Segment(A, B)`
+
+  -- Length / Distance --
+  [PASS] Length(seg)   OA = 4                                  → qs_len = 4  (expected 4.0)
+  [PASS] Distance(O,A) = 4                                     → qs_dist = 4  (expected 4.0)
+  [PASS] Distance(O,B) = 3                                     → qs_db = 3  (expected 3.0)
+
+  -- Area --
+  [PASS] Area(tri) OAB = 6                                     → qs_area = 6  (expected 6.0)
+
+  -- Perimeter --
+  [PASS] Perimeter(tri) 3-4-5 = 12                             → qs_peri = 12  (expected 12.0)
+
+  -- Slope --
+  [PASS] Slope(l_h)    horizontal = 0                          → qs_sl1 = 0  (expected 0.0)
+  [PASS] Slope(l_d)    diagonal   = 1                          → qs_sl2 = 1  (expected 1.0)
+  [PASS] Slope(l_AB)   oblique    = -3/4                       → qs_sl3 = -0.75  (expected -0.75)
+  [PASS] Slope(seg_AB) Segment    = -3/4                       → qs_sl4 = -0.75  (expected -0.75)
+
+  -- Angle --
+  [PASS] Angle(A,O,B) = 90°                                    → qs_ang = 90°
+  [PASS] Angle(B,A,O)                                          → qs_ang2 = 36.87°
+  [PASS] Angle(O,B,A)                                          → qs_ang3 = 53.13°
+
+  [SAVED] temp/query_02_scalar.png

@@ -1,0 +1,34 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  8. Tangent Length – Power of a Point
+==============================================================
+  [setup/ok] C=(5,0)                                     `C = (5, 0)`
+  [setup/ok] P=(0,0)                                     `P = (0, 0)`
+  [setup/ok] circ = Circle(C,3)                          `circ = Circle(C, 3)`
+  [setup/ok] M = Midpoint(P,C)                           `M = Midpoint(P, C)`
+  [setup/ok] hcirc = Circle(M,P)                         `hcirc = Circle(M, P)`
+  [setup/ok] T1 = Intersect(hcirc,circ,1)                `T1 = Intersect(hcirc, circ, 1)`
+  [setup/ok] T2 = Intersect(hcirc,circ,2)                `T2 = Intersect(hcirc, circ, 2)`
+  [setup/ok] tan1 = Line(P,T1)                           `tan1 = Line(P, T1)`
+  [setup/ok] tan2 = Line(P,T2)                           `tan2 = Line(P, T2)`
+  [setup/ok] r_CT1 = Line(C,T1)                          `r_CT1 = Line(C, T1)`
+
+  -- Tangent length = sqrt(PC²-r²) = sqrt(25-9) = 4 --
+  [PASS] Distance(P,T1) = 4                                      → d_PT1 = 4  (expected 4.0000)
+  [PASS] Distance(P,T2) = 4  (symmetric)                         → d_PT2 = 4  (expected 4.0000)
+
+  -- Radius ⊥ tangent at touch point --
+  [PASS] ArePerpendicular(r_CT1, tan1)  (true)                   → qtg1 = true  (expected True)
+
+  -- IsTangent verification --
+  [PASS] IsTangent(tan1, circ)  (true)                           → qtg2 = true  (expected True)
+
+  -- Distances to center --
+  [PASS] Distance(P,C) = 5                                       → d_PC = 5  (expected 5.0000)
+  [PASS] Distance(C,T1) = 3  (radius)                            → d_CT1 = 3  (expected 3.0000)
+
+  -- Pythagorean check: PT1²+CT1² = PC² --
+  [PASS] Distance(P,T1)² + Distance(C,T1)² via sides (=25)       → pyth = 25  (expected 25.0000)
+
+  [SAVED] temp/complex_08_tangent.png

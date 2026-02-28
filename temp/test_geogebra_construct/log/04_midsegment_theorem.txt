@@ -1,0 +1,12 @@
+GeoGebra initialized successfully via Selenium
+  [ok] `A = (0, 4)`
+  [ok] `B = (-3, 0)`
+  [ok] `C = (3, 0)`
+  [ok] `tri = Polygon(A, B, C)`
+  [ok] `D = Midpoint(A, B)`
+  [ok] `E = Midpoint(A, C)`
+  [ok] `de = Segment(D, E)`
+  [ok] `bc = Segment(B, C)`
+  [ok] `lenDE = Distance(D, E)`
+  [ok] `lenBC = Distance(B, C)`
+  [SAVED] temp/test_geogebra_construct/fig/04_midsegment_theorem.png

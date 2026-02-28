@@ -1,0 +1,30 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  6. Parallel-Perpendicular Chain
+==============================================================
+  [setup/ok] A=(0,0)                                     `A = (0, 0)`
+  [setup/ok] B=(4,3)                                     `B = (4, 3)`
+  [setup/ok] P=(0,6)                                     `P = (0, 6)`
+  [setup/ok] L1 = Line(A,B)                              `L1 = Line(A, B)`
+  [setup/ok] L2 = Line(P,L1)  (parallel)                 `L2 = Line(P, L1)`
+  [setup/ok] L3 = PerpendicularLine(P,L1)                `L3 = PerpendicularLine(P, L1)`
+
+  -- Direct constructions --
+  [PASS] AreParallel(L1,L2)       (true)                         → qc1 = true  (expected True)
+  [PASS] ArePerpendicular(L1,L3)   (true)                        → qc2 = true  (expected True)
+
+  -- Derived: L3 ⊥ L2  (because L2 ∥ L1) --
+  [PASS] ArePerpendicular(L2,L3)   (true – derived)              → qc3 = true  (expected True)
+
+  -- Negative cases --
+  [PASS] AreParallel(L1,L3)        (false)                       → qc4 = false  (expected False)
+  [PASS] AreParallel(L2,L3)        (false)                       → qc5 = false  (expected False)
+  [PASS] ArePerpendicular(L1,L2)   (false – parallel)            → qc6 = false  (expected False)
+
+  -- Slopes (verify numerically) --
+  [PASS] Slope(L1) = 0.75                                        → sl_L1 = 0.75  (expected 0.7500)
+  [PASS] Slope(L2) = 0.75                                        → sl_L2 = 0.75  (expected 0.7500)
+  [PASS] Slope(L3) = -4/3                                        → sl_L3 = -1.33  (expected -1.3333)
+
+  [SAVED] temp/complex_06_chain.png

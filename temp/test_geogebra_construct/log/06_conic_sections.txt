@@ -1,0 +1,10 @@
+GeoGebra initialized successfully via Selenium
+  [ok] `F1 = (-2, 0)`
+  [ok] `F2 = (2, 0)`
+  [ok] `Pe = (0, 2)`
+  [ok] `ell = Ellipse(F1, F2, Pe)`
+  [ok] `hyp = Hyperbola(F1, F2, Pe)`
+  [ok] `Fp = (0, 2)`
+  [ok] `dirL = Line((-5,-2),(5,-2))`
+  [ok] `par = Parabola(Fp, dirL)`
+  [SAVED] temp/test_geogebra_construct/fig/06_conic_sections.png

@@ -6,10 +6,10 @@ GeoGebra initialized successfully via Selenium
   NL: Draw a circle with centre O and radius 3. Place three points A, B, C on the circle. Draw the inscrib...
 
     [OK  ] O = (0, 0)
-    [OK  ] c1 = Circle(O, 3)
-    [OK  ] A = Point(c1)
-    [OK  ] B = Point(c1)
-    [OK  ] C = Point(c1)
+    [OK  ] c = Circle(O, 3)
+    [OK  ] A = Point(c)
+    [OK  ] B = Point(c)
+    [OK  ] C = Point(c)
     [OK  ] s_AB = Segment(A, B)
     [OK  ] s_BC = Segment(B, C)
     [OK  ] s_AO = Segment(A, O)
@@ -19,4 +19,6 @@ GeoGebra initialized successfully via Selenium
   [LLM] DONE
 
   Tool calls: 11 OK, 0 failed (of 11 total)
-  [SAVED] temp\llm_02_inscribed_angle.png
+  Tokens in/out/total: 31238/354/32397
+  Timing TTFT=6.061s | submit->final=44.075s | submit->last=44.075s
+  [SAVED] temp/llm_02_inscribed_angle.png

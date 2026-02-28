@@ -5,16 +5,18 @@ GeoGebra initialized successfully via Selenium
 ============================================================
   NL: Draw triangle ABC. Mark D as the midpoint of AB and E as the midpoint of AC. Draw segment DE. Label ...
 
-    [OK  ] A = (1, 5)
-    [OK  ] B = (-3, 0)
-    [OK  ] C = (5, 0)
+    [OK  ] A = (0, 0)
+    [OK  ] B = (4, 0)
+    [OK  ] C = (2, 4)
     [OK  ] poly1 = Polygon(A, B, C)
     [OK  ] D = Midpoint(A, B)
     [OK  ] E = Midpoint(A, C)
-    [OK  ] s_DE = Segment(D, E)
-    [OK  ] dist_DE = Distance(D, E)
-    [OK  ] dist_BC = Distance(B, C)
+    [OK  ] DE = Segment(D, E)
+    [OK  ] distDE = Distance(D, E)
+    [OK  ] distBC = Distance(B, C)
   [LLM] DONE
 
   Tool calls: 9 OK, 0 failed (of 9 total)
-  [SAVED] temp\llm_04_midsegment.png
+  Tokens in/out/total: 25288/254/26121
+  Timing TTFT=32.541s | submit->final=61.895s | submit->last=61.895s
+  [SAVED] temp/llm_04_midsegment.png

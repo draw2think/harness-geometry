@@ -1,0 +1,30 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  7. Reflection = Perpendicular Bisector
+==============================================================
+  [setup/ok] O=(0,0)                                     `O = (0, 0)`
+  [setup/ok] V=(1,1)                                     `V = (1, 1)`
+  [setup/ok] L = Line(O,V)                               `L = Line(O, V)`
+  [setup/ok] A=(3,0)                                     `A = (3, 0)`
+  [setup/ok] Ar = Reflect(A,L)                           `Ar = Reflect(A, L)`
+  [setup/ok] PB = PerpendicularBisector(A,Ar)            `PB = PerpendicularBisector(A, Ar)`
+  [setup/ok] Mid_AAr = Midpoint(A,Ar)                    `Mid_AAr = Midpoint(A, Ar)`
+
+  -- Core theorem: L == PerpendicularBisector(A, A') --
+  [PASS] AreEqual(L, PB)  (true)                                 → qr1 = true  (expected True)
+
+  -- Midpoint of AA' lies on L --
+  [PASS] AreCollinear(O, Mid_AAr, V)  (true)                     → qr2 = true  (expected True)
+
+  -- Distance and symmetry checks --
+  [PASS] Distance(O,A) = 3                                       → dr_OA = 3  (expected 3.0000)
+  [PASS] Distance(O,Ar) = 3  (image equidistant)                 → dr_OAr = 3  (expected 3.0000)
+  [PASS] Distance(A,Ar) = 3√2 ≈ 4.243                            → dr_AAr = 4.24  (expected 4.2426)
+
+  -- AreCongruent: segment(O,A) ≅ segment(O,Ar) --
+  [setup/ok] s1 = Segment(O,A)                           `s1 = Segment(O, A)`
+  [setup/ok] s2 = Segment(O,Ar)                          `s2 = Segment(O, Ar)`
+  [PASS] AreCongruent(s1, s2)  (true)                            → qr3 = true  (expected True)
+
+  [SAVED] temp/complex_07_reflection.png

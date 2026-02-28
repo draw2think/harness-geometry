@@ -1,0 +1,26 @@
+GeoGebra initialized successfully via Selenium
+
+==============================================================
+  4. Thales' Theorem – Inscribed Angle in Semicircle = 90°
+==============================================================
+  [setup/ok] A=(-3,0)                                    `A = (-3, 0)`
+  [setup/ok] B=(3,0)                                     `B = (3, 0)`
+  [setup/ok] O=(0,0)                                     `O = (0, 0)`
+  [setup/ok] sc = Semicircle(A,B)                        `sc = Semicircle(A, B)`
+  [setup/ok] P1=(0,3)                                    `P1 = (0, 3)`
+  [setup/ok] P2=(3cos(60°),3sin(60°))                    `P2 = (3cos(60°), 3sin(60°))`
+  [setup/ok] P3=(3cos(120°),3sin(120°))                  `P3 = (3cos(120°), 3sin(120°))`
+  [setup/ok] Q=(1,1) (interior)                          `Q = (1, 1)`
+
+  -- Angle at inscribed points = 90° (= π/2 rad ≈ 1.5708) --
+  [PASS] Angle(A,P1,B) top of circle                             → ang1 = 90°  (expected 1.5708)
+  [PASS] Angle(A,P2,B) at 60°                                    → ang2 = 90°  (expected 1.5708)
+  [PASS] Angle(A,P3,B) at 120°                                   → ang3 = 90°  (expected 1.5708)
+
+  -- Interior point Q=(1,1): angle ≠ 90° --
+  [PASS] Angle(A,Q,B) interior (not 90°)                         → ang4 = 139.4°
+
+  -- AreCollinear: A, O, B on x-axis (diameter) --
+  [PASS] AreCollinear(A,O,B)  (true)                             → qth = true  (expected True)
+
+  [SAVED] temp/complex_04_thales.png

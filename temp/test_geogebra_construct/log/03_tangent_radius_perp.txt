@@ -1,0 +1,15 @@
+GeoGebra initialized successfully via Selenium
+  [ok] `O = (0, 0)`
+  [ok] `P = (6, 0)`
+  [ok] `circ = Circle(O, 3)`
+  [ok] `cP = Circle(P, sqrt(27))`
+  [ok] `T1 = Intersect(circ, cP, 1)`
+  [ok] `T2 = Intersect(circ, cP, 2)`
+  [ok] `l1 = Line(P, T1)`
+  [ok] `l2 = Line(P, T2)`
+  [ok] `r1 = Segment(O, T1)`
+  [ok] `t1 = Segment(P, T1)`
+  [ok] `r2 = Segment(O, T2)`
+  [ok] `t2 = Segment(P, T2)`
+  [ok] `ang1 = Angle(O, T1, P)`
+  [SAVED] temp/test_geogebra_construct/fig/03_tangent_radius_perp.png

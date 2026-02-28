@@ -6,16 +6,16 @@ GeoGebra initialized successfully via Selenium
   NL: Draw a circle with centre O and radius 3. Place point P outside the circle at (7, 0). Draw both tang...
 
     [OK  ] O = (0, 0)
-    [OK  ] c = Circle(O, 3)
     [OK  ] P = (7, 0)
+    [OK  ] c = Circle(O, 3)
     [OK  ] t = Tangent(P, c)
-    [OK  ] M = Midpoint(O, P)
-    [OK  ] c2 = Circle(M, 3.5)
-    [OK  ] T1 = Intersect(c, c2, 1)
-    [OK  ] T2 = Intersect(c, c2, 2)
+    [OK  ] T1 = Intersect(t, c, 1)
+    [OK  ] T2 = Intersect(t, c, 2)
     [OK  ] s_OT1 = Segment(O, T1)
     [OK  ] alpha = Angle(O, T1, P)
   [LLM] DONE
 
-  Tool calls: 10 OK, 0 failed (of 10 total)
-  [SAVED] temp\llm_03_tangent.png
+  Tool calls: 8 OK, 0 failed (of 8 total)
+  Tokens in/out/total: 27536/245/28933
+  Timing TTFT=10.124s | submit->final=44.744s | submit->last=44.744s
+  [SAVED] temp/llm_03_tangent.png

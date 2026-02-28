@@ -1,0 +1,23 @@
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  Isosceles triangle + perpendicular bisector
+============================================================
+  NL: Construct isosceles triangle ABC where AB = AC = 5 and BC = 6. Draw the perpendicular bisector of BC...
+
+    [OK  ] B = (-3, 0)
+    [OK  ] C = (3, 0)
+    [OK  ] A = (0, 4)
+    [OK  ] BC = Segment(B, C)
+    [OK  ] AB = Segment(A, B)
+    [OK  ] AC = Segment(A, C)
+    [OK  ] perp_BC = PerpendicularBisector(B, C)
+    [OK  ] M = Intersect(perp_BC, BC, 1)
+    [OK  ] AM = Segment(A, M)
+    [OK  ] angle_AMB = Angle(A, M, B)
+  [LLM] DONE
+
+  Tool calls: 10 OK, 0 failed (of 10 total)
+  Tokens in/out/total: 29072/304/30647
+  Timing TTFT=47.765s | submit->final=77.413s | submit->last=77.413s
+  [SAVED] temp/llm_01_isosceles.png

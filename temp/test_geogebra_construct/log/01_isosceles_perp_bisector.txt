@@ -1,0 +1,12 @@
+GeoGebra initialized successfully via Selenium
+  [ok] `B = (0, 0)`
+  [ok] `C = (6, 0)`
+  [ok] `cB = Circle(B, 5)`
+  [ok] `cC = Circle(C, 5)`
+  [ok] `A = Intersect(cB, cC, 1)`
+  [ok] `tri = Polygon(A, B, C)`
+  [ok] `pb = PerpendicularBisector(B, C)`
+  [ok] `M = Intersect(pb, Segment(B, C))`
+  [ok] `am = Segment(A, M)`
+  [ok] `ang = Angle(B, M, A)`
+  [SAVED] temp/test_geogebra_construct/fig/01_isosceles_perp_bisector.png

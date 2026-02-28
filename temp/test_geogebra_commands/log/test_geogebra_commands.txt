@@ -1,0 +1,157 @@
+
+============================================================
+  GeoGebra Full Command Coverage + LLM Pipeline Test
+============================================================
+
+[Initializing GeoGebra for: Basic & Edit]
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  1. Basic & Edit
+============================================================
+
+  -- Points & Basics --
+  [PASS] Free point                                     `A = (1, 2)`
+  [PASS] Free point B                                   `B = (4, 1)`
+  [PASS] Free point C                                   `C = (2, 4)`
+  [PASS] Slider (numeric)                               `n = Slider(1, 10, 1)`
+  [PASS] Slider (angle)                                 `alpha = Slider(0, 360, 1)`
+
+  -- Intersection --
+  [PASS] Line for intersect 1                           `l1 = Line((0,0),(3,3))`
+  [PASS] Line for intersect 2                           `l2 = Line((0,3),(3,0))`
+  [PASS] Intersect two lines                            `P = Intersect(l1, l2)`
+
+  -- Function roots / turning points --
+  [PASS] Define polynomial                              `f(x) = x^3 - 3x`
+  [PASS] Root of f                                      `r1 = Root(f, -2, 0)`
+  [PASS] TurningPoint of f                              `tp = Extremum(f, -2, 2)`
+
+  -- Best Fit Line --
+  [PASS] List of points                                 `pts = {(1,2),(2,3.5),(3,4),(4,5.5)}`
+  [PASS] Best fit line                                  `bfl = FitLine(pts)`
+
+  -- Text --
+  [PASS] Text object                                    `txt = Text("Hello GeoGebra", (1, 5))`
+
+[Initializing GeoGebra for: Geometric Construction]
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  2. Geometric Construction
+============================================================
+  [PASS] Point A                                        `A = (0, 0)`
+  [PASS] Point B                                        `B = (4, 0)`
+  [PASS] Point C                                        `C = (2, 3)`
+  [PASS] Point D                                        `D = (5, 3)`
+
+  -- Lines --
+  [PASS] Segment                                        `seg = Segment(A, B)`
+  [PASS] Line through 2 pts                             `lin = Line(A, C)`
+  [PASS] Ray                                            `ray = Ray(A, B)`
+  [PASS] Vector                                         `vec = Vector(A, B)`
+  [PASS] Segment with length                            `segL = Segment(A, 3)`
+  [PASS] Polyline                                       `poly = Polyline(A, B, C, D)`
+
+  -- Constructions --
+  [PASS] Midpoint                                       `M = Midpoint(A, B)`
+  [PASS] Perpendicular line                             `perp = PerpendicularLine(C, seg)`
+  [PASS] Perpendicular bisector                         `pb = PerpendicularBisector(A, B)`
+  [PASS] Parallel line                                  `par = Line(C, seg)`
+  [PASS] Angle bisector (3pts)                          `ab = AngleBisector(A, C, B)`
+  [PASS] Angle bisector (2lns)                          `ab2 = AngleBisector(lin, par)`
+
+  -- Polygons --
+  [PASS] Polygon (triangle)                             `tri = Polygon(A, B, C)`
+  [PASS] Regular polygon (hex)                          `hex = Polygon(A, B, 6)`
+
+  -- Point on Object --
+  [PASS] Point on segment                               `Pseg = Point(seg)`
+  [PASS] Point on line                                  `Plin = Point(lin)`
+
+  -- Tangents --
+  [PASS] Circle for tangent                             `circ = Circle(C, 2)`
+  [PASS] Tangent from point                             `tan = Tangent(A, circ)`
+
+  -- Locus --
+  [PASS] Slider t                                       `t = Slider(0, 1, 0.01)`
+  [PASS] Locus point                                    `Ploc = A + t * (B - A)`
+  [PASS] Locus curve                                    `loc = Locus(Ploc, t)`
+
+[Initializing GeoGebra for: Advanced Curves & Measure]
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  3. Advanced Curves & Measurement
+============================================================
+  [PASS] Point A                                        `A = (0, 0)`
+  [PASS] Point B                                        `B = (4, 0)`
+  [PASS] Point C                                        `C = (2, 3)`
+  [PASS] Point D                                        `D = (-1, 1)`
+  [PASS] Point E                                        `E = (3, -1)`
+
+  -- Circles --
+  [PASS] Circle centre+radius                           `c1 = Circle(A, 2)`
+  [PASS] Circle centre+point                            `c2 = Circle(A, B)`
+  [PASS] Circle through 3 pts                           `c3 = Circle(A, B, C)`
+  [PASS] Semicircle                                     `sc = Semicircle(A, B)`
+  [PASS] Circular arc                                   `arc = CircularArc(A, B, C)`
+  [PASS] Circumcircular arc                             `carc = CircumcircularArc(A, B, C)`
+  [PASS] Circular sector                                `sec = CircularSector(A, B, C)`
+  [PASS] Circumcircular sector                          `csec = CircumcircularSector(A, B, C)`
+
+  -- Conics --
+  [PASS] Ellipse (2 foci+pt)                            `ell = Ellipse(A, B, C)`
+  [PASS] Parabola (focus+dir)                           `dirL = Line((0,2),(1,2))`
+  [PASS] Parabola                                       `par = Parabola(A, dirL)`
+  [PASS] Hyperbola (2 foci+pt)                          `hyp = Hyperbola(A, B, C)`
+  [PASS] Conic through 5 pts                            `con = Conic(A, B, C, D, E)`
+
+  -- Measurement --
+  [PASS] Polygon for measure                            `tri = Polygon(A, B, C)`
+  [PASS] Angle (3 pts)                                  `ang = Angle(A, B, C)`
+  [PASS] Angle (polygon)                                `angT = Angle(tri)`
+  [PASS] Distance pts                                   `dist = Distance(A, B)`
+  [PASS] Area polygon                                   `area = Area(tri)`
+  [PASS] Area circle                                    `areaC = Area(c1)`
+  [PASS] Slope of line                                  `lin = Line(A, C)`
+  [PASS] Slope                                          `sl = Slope(lin)`
+
+[Initializing GeoGebra for: Transformations]
+GeoGebra initialized successfully via Selenium
+
+============================================================
+  4. Geometric Transformations
+============================================================
+  [PASS] Point A                                        `A = (1, 1)`
+  [PASS] Point B                                        `B = (4, 1)`
+  [PASS] Point C                                        `C = (2, 4)`
+  [PASS] Mirror line                                    `mirL = Line((3,0),(3,5))`
+  [PASS] Triangle                                       `tri = Polygon(A, B, C)`
+  [PASS] Vector v                                       `v = Vector((2, 1))`
+  [PASS] Centre O                                       `O = (0, 0)`
+  [PASS] Circle for inversion                           `invC = Circle(O, 3)`
+
+  -- Reflections --
+  [PASS] Reflect point in line                          `A2 = Reflect(A, mirL)`
+  [PASS] Reflect tri in line                            `tri2 = Reflect(tri, mirL)`
+  [PASS] Reflect point in pt                            `A3 = Reflect(A, O)`
+  [PASS] Reflect tri in pt                              `tri3 = Reflect(tri, O)`
+  [PASS] Reflect in circle                              `A4 = Reflect(A, invC)`
+
+  -- Translation --
+  [PASS] Translate point                                `A5 = Translate(A, v)`
+  [PASS] Translate triangle                             `tri4 = Translate(tri, v)`
+
+  -- Rotation --
+  [PASS] Rotate point 45deg                             `A6 = Rotate(A, 45*pi/180, O)`
+  [PASS] Rotate tri 90deg                               `tri5 = Rotate(tri, pi/2, O)`
+
+  -- Dilation (Enlarge) --
+  [PASS] Dilate point k=2                               `A7 = Dilate(A, 2, O)`
+  [PASS] Dilate triangle k=2                            `tri6 = Dilate(tri, 2, O)`
+
+============================================================
+  All tests complete.
+============================================================
+
