@@ -11,25 +11,23 @@ GeoGebra initialized successfully via Selenium
            canvas: {"B": "point", "C": "point"}
     [OK  ] A = (0, 4)
            canvas: {"B": "point", "C": "point", "A": "point"}
-    [OK  ] s_AB = Segment(A, B)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment"}
-    [OK  ] s_AC = Segment(A, C)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment"}
-    [OK  ] s_BC = Segment(B, C)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment"}
+    [OK  ] BC = Segment(B, C)
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment"}
+    [OK  ] AB = Segment(A, B)
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment", "AB": "segment"}
+    [OK  ] AC = Segment(A, C)
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment", "AB": "segment", "AC": "segment"}
     [OK  ] perp_BC = PerpendicularBisector(B, C)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line"}
-    [OK  ] M = Intersect(perp_BC, s_BC, 1)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line", "M": "point"}
-    [OK  ] s_AM = Segment(A, M)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line", "M": "point"}
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment", "AB": "segment", "AC": "segment", "perp_BC": "line"}
+    [OK  ] M = Intersect(perp_BC, BC, 1)
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment", "AB": "segment", "AC": "segment", "perp_BC": "line", "M": "point"}
+    [OK  ] AM = Segment(A, M)
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment", "AB": "segment", "AC": "segment", "perp_BC": "line", "M": "point"}
     [OK  ] angle_AMB = Angle(A, M, B)
-           canvas: {"B": "point", "C": "point", "A": "point", "s_AB": "segment", "s_AC": "segment", "s_BC": "segment", "perp_BC": "line", "M": "point", "angle_AMB": "angle"}
-    [FAIL] [unknown tool: query_length]  -> Tool 'query_length' not implemented
-    [FAIL] [unknown tool: query_length]  -> Tool 'query_length' not implemented
+           canvas: {"B": "point", "C": "point", "A": "point", "BC": "segment", "AB": "segment", "AC": "segment", "perp_BC": "line", "M": "point", "angle_AMB": "angle"}
   [LLM] DONE
 
-  Tool calls: 10 OK, 2 failed (of 12 total)
-  Tokens in/out/total: 39452/366/40497
-  Timing TTFT=6.989s | submit->final=38.41s
+  Tool calls: 10 OK, 0 failed (of 10 total)
+  Tokens in/out/total: 33161/304/34122
+  Timing TTFT=18.304s | submit->final=40.525s
   [SAVED] temp/test_llm_stepwise_canvas/fig/sc_01_isosceles.png
