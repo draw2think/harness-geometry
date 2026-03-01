@@ -1,0 +1,10 @@
+
+================================================================
+  [C_symbolic]  sym_03_circle_circumference
+  What is the circumference of a circle with radius 3? Express using pi.
+================================================================
+  [ANSWER] {"value": "6*pi", "type": "symbolic"}
+
+  [PASS] eval('6*pi')=18.849556 vs 18.849556
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5383/17/5463  TTFT=3.887s  t_final=3.887s

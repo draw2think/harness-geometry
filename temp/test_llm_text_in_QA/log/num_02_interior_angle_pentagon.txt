@@ -1,0 +1,10 @@
+
+================================================================
+  [B_numerical]  num_02_interior_angle_pentagon
+  What is the measure in degrees of each interior angle of a regular pentagon?
+================================================================
+  [ANSWER] {"value": 108, "type": "numerical"}
+
+  [PASS] 108.0000 vs 108.0000  (tol=0.01)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5383/16/5538  TTFT=4.921s  t_final=4.922s

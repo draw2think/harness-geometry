@@ -1,0 +1,10 @@
+
+================================================================
+  [C_symbolic]  sym_02_equilateral_area_side2
+  What is the area of an equilateral triangle with side length 2? Express in exact symbolic form.
+================================================================
+  [ANSWER] {"value": "sqrt(3)", "type": "symbolic"}
+
+  [PASS] eval('sqrt(3)')=1.732051 vs 1.732051
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5387/17/5512  TTFT=5.222s  t_final=5.222s

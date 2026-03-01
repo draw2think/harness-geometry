@@ -1,0 +1,10 @@
+
+================================================================
+  [C_symbolic]  sym_04_sector_area_60deg
+  A circle has radius 6 and a sector with central angle 60°. What is the area of the sector? Express i...
+================================================================
+  [ANSWER] {"value": "6*pi", "type": "symbolic"}
+
+  [PASS] eval('6*pi')=18.849556 vs 18.849556
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5397/17/5611  TTFT=5.017s  t_final=5.017s

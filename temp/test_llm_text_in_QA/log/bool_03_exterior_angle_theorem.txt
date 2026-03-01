@@ -1,0 +1,10 @@
+
+================================================================
+  [A_boolean]  bool_03_exterior_angle_theorem
+  The exterior angle of a triangle at vertex A is 110°. The interior angles at B and C are 60° and 50°...
+================================================================
+  [ANSWER] {"value": true, "type": "boolean"}
+
+  [PASS] True vs True
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5417/13/5548  TTFT=4.709s  t_final=4.709s

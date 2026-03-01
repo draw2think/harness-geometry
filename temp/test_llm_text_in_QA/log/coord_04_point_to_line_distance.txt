@@ -1,0 +1,10 @@
+
+================================================================
+  [D_coordinate]  coord_04_point_to_line_distance
+  What is the distance from point (3, 4) to the line  3x + 4y = 0?
+================================================================
+  [ANSWER] {"value": 5, "type": "numerical"}
+
+  [PASS] 5.0000 vs 5.0000  (tol=0.001)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5393/14/5660  TTFT=11.481s  t_final=11.481s

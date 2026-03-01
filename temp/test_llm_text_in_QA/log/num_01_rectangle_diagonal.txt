@@ -1,0 +1,10 @@
+
+================================================================
+  [B_numerical]  num_01_rectangle_diagonal
+  What is the length of the diagonal of a rectangle with sides 5 and 12?
+================================================================
+  [ANSWER] {"value": 13, "type": "numerical"}
+
+  [PASS] 13.0000 vs 13.0000  (tol=0.001)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5386/15/5480  TTFT=4.297s  t_final=4.297s

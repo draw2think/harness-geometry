@@ -1,0 +1,11 @@
+
+================================================================
+  [E_geogebra]  ggb_02_median_length
+  In triangle ABC with A=(0,0), B=(6,0), C=(2,4), what is the length of the median from vertex A to th...
+================================================================
+  [LLM] turn 1 — waiting for model…
+  [ANSWER] {"value": "2*sqrt(5)", "type": "symbolic"}
+
+  [PASS] eval('2*sqrt(5)')=4.4721 vs 4.4721  (tol=0.01)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5440/19/5830  TTFT=5.936s  t_final=5.936s

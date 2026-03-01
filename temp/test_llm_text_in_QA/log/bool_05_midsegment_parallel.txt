@@ -1,0 +1,10 @@
+
+================================================================
+  [A_boolean]  bool_05_midsegment_parallel
+  In triangle ABC, D is the midpoint of AB and E is the midpoint of AC. Is segment DE parallel to BC a...
+================================================================
+  [ANSWER] {"value": true, "type": "boolean"}
+
+  [PASS] True vs True
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5400/13/5509  TTFT=8.292s  t_final=8.292s

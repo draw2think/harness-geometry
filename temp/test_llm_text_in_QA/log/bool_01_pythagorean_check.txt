@@ -1,0 +1,10 @@
+
+================================================================
+  [A_boolean]  bool_01_pythagorean_check
+  Is a triangle with sides 3, 4, and 5 a right triangle?
+================================================================
+  [ANSWER] {"value": true, "type": "boolean"}
+
+  [PASS] True vs True
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5385/13/5478  TTFT=4.376s  t_final=4.376s

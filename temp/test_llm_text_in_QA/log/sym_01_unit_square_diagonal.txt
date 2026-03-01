@@ -1,0 +1,10 @@
+
+================================================================
+  [C_symbolic]  sym_01_unit_square_diagonal
+  What is the length of the diagonal of a unit square? Express in exact symbolic form.
+================================================================
+  [ANSWER] {"value": "sqrt(2)", "type": "symbolic"}
+
+  [PASS] eval('sqrt(2)')=1.414214 vs 1.414214
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5385/17/5485  TTFT=4.027s  t_final=4.027s

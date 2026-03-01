@@ -1,0 +1,10 @@
+
+================================================================
+  [D_coordinate]  coord_01_midpoint
+  Find the midpoint of the segment with endpoints A(−2, 3) and B(6, −1).
+================================================================
+  [ANSWER] {"value": [2, 1], "type": "coordinate"}
+
+  [PASS] (2.000,1.000) vs (2.000,1.000)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5390/17/5594  TTFT=4.971s  t_final=4.971s

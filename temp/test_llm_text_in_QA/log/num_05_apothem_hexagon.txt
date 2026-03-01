@@ -1,0 +1,10 @@
+
+================================================================
+  [B_numerical]  num_05_apothem_hexagon
+  What is the apothem (perpendicular distance from center to a side) of a regular hexagon with side le...
+================================================================
+  [ANSWER] {"value": 3.464101615, "type": "numerical"}
+
+  [PASS] 3.4641 vs 3.4641  (tol=0.01)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5398/24/6070  TTFT=11.841s  t_final=11.841s

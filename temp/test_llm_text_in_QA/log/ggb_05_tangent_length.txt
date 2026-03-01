@@ -1,0 +1,11 @@
+
+================================================================
+  [E_geogebra]  ggb_05_tangent_length
+  From external point P=(7,0), a tangent is drawn to the circle centered at O=(0,0) with radius 3. Wha...
+================================================================
+  [LLM] turn 1 — waiting for model…
+  [ANSWER] {"value": "2*sqrt(10)", "type": "symbolic"}
+
+  [PASS] eval('2*sqrt(10)')=6.3246 vs 6.3246  (tol=0.01)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5448/20/5767  TTFT=5.008s  t_final=5.008s

@@ -1,0 +1,10 @@
+
+================================================================
+  [C_symbolic]  sym_05_inradius_equilateral_6
+  What is the inradius of an equilateral triangle with side length 6? Express in exact symbolic form.
+================================================================
+  [ANSWER] {"value": "sqrt(3)", "type": "symbolic"}
+
+  [PASS] eval('sqrt(3)')=1.732051 vs 1.732051
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5388/17/5752  TTFT=12.623s  t_final=12.623s

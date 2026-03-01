@@ -1,0 +1,10 @@
+
+================================================================
+  [A_boolean]  bool_04_inscribed_angle_half
+  A central angle subtends an arc of 80°. An inscribed angle subtending the same arc measures 40°. Is ...
+================================================================
+  [ANSWER] {"value": true, "type": "boolean"}
+
+  [PASS] True vs True
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5401/13/5543  TTFT=5.103s  t_final=5.103s

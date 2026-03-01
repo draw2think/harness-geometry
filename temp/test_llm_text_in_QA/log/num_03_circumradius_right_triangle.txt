@@ -1,0 +1,10 @@
+
+================================================================
+  [B_numerical]  num_03_circumradius_right_triangle
+  What is the circumradius of a right triangle with legs 3 and 4? Give a decimal answer.
+================================================================
+  [ANSWER] {"value": 2.5, "type": "numerical"}
+
+  [PASS] 2.5000 vs 2.5000  (tol=0.001)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5389/16/5509  TTFT=4.184s  t_final=4.184s

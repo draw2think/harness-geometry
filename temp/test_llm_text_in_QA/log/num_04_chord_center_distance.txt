@@ -1,0 +1,10 @@
+
+================================================================
+  [B_numerical]  num_04_chord_center_distance
+  A chord of length 8 is drawn in a circle of radius 5. What is the perpendicular distance from the ce...
+================================================================
+  [ANSWER] {"value": 3, "type": "numerical"}
+
+  [PASS] 3.0000 vs 3.0000  (tol=0.001)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5395/14/5632  TTFT=5.821s  t_final=5.821s

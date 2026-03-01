@@ -1,0 +1,10 @@
+
+================================================================
+  [A_boolean]  bool_02_square_diagonals_perp
+  Are the diagonals of a square perpendicular to each other?
+================================================================
+  [ANSWER] {"value": true, "type": "boolean"}
+
+  [PASS] True vs True
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5378/13/5456  TTFT=3.512s  t_final=3.512s

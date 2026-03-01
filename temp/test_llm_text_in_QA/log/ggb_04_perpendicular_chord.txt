@@ -1,0 +1,11 @@
+
+================================================================
+  [E_geogebra]  ggb_04_perpendicular_chord
+  A chord of the circle with center O=(0,0) and radius 5 passes through interior point P=(3,0) and is ...
+================================================================
+  [LLM] turn 1 — waiting for model…
+  [ANSWER] {"value": 8, "type": "numerical"}
+
+  [PASS] 8.0=8.0000 vs 8.0000  (tol=0.01)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5443/14/5601  TTFT=4.607s  t_final=4.607s

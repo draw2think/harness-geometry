@@ -1,0 +1,10 @@
+
+================================================================
+  [D_coordinate]  coord_05_circumcenter_right
+  Find the circumcenter of the triangle with vertices A(0, 0),  B(4, 0),  C(0, 3). Give the answer as ...
+================================================================
+  [ANSWER] {"value": [2, 1.5], "type": "coordinate"}
+
+  [PASS] (2.000,1.500) vs (2.000,1.500)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5408/19/5880  TTFT=7.883s  t_final=7.883s

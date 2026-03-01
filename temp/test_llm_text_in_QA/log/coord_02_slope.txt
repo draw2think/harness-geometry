@@ -1,0 +1,10 @@
+
+================================================================
+  [D_coordinate]  coord_02_slope
+  What is the slope of the line passing through (1, 2) and (4, 11)?
+================================================================
+  [ANSWER] {"value": 3, "type": "numerical"}
+
+  [PASS] 3.0000 vs 3.0000  (tol=0.001)
+  Approach: direct  |  Tools: 0 OK / 0 fail of 0
+  Tokens: 5390/14/5572  TTFT=5.024s  t_final=5.024s
