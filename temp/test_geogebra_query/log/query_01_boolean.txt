@@ -54,4 +54,4 @@ GeoGebra initialized successfully via Selenium
   [PASS] P_in  inside tri  (true)                              → q_reg1 = true  (expected True)
   [PASS] P_out inside tri  (false)                             → q_reg2 = false  (expected False)
 
-  [SAVED] temp/query_01_boolean.png
+  [SAVED] temp/test_geogebra_query/fig/query_01_boolean.png

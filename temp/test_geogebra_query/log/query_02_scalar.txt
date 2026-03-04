@@ -36,4 +36,4 @@ GeoGebra initialized successfully via Selenium
   [PASS] Angle(B,A,O)                                          → qs_ang2 = 36.87°
   [PASS] Angle(O,B,A)                                          → qs_ang3 = 53.13°
 
-  [SAVED] temp/query_02_scalar.png
+  [SAVED] temp/test_geogebra_query/fig/query_02_scalar.png
