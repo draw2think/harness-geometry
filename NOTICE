@@ -1,0 +1,37 @@
+Draw2Think — Third-Party Notices
+================================
+
+This project (the Python code under `symbolic/` and `eval/`) is released under
+the MIT License (see LICENSE). It is an independent program that interacts with
+the GeoGebra dynamic geometry system through GeoGebra's public JavaScript API.
+It does not link against, embed, or redistribute GeoGebra source code.
+
+
+GeoGebra
+--------
+Copyright (c) GeoGebra GmbH, office@geogebra.org — https://www.geogebra.org
+
+The GeoGebra Math Apps bundle is NOT distributed with this repository.
+`setup.py` downloads it at install time from the official source:
+
+    https://download.geogebra.org/package/geogebra-math-apps-bundle
+
+The GeoGebra command manual (en/modules/ROOT/pages) is likewise NOT
+distributed here; `setup.py` fetches it on demand from the official repo:
+
+    https://github.com/geogebra/manual  (en/modules/ROOT/pages, CC BY-NC-SA)
+
+GeoGebra is licensed by GeoGebra GmbH under:
+
+  * GNU General Public License v3 or later (the software)
+    https://www.gnu.org/licenses/gpl.html
+
+  * Creative Commons Attribution-NonCommercial-ShareAlike 3.0 or later
+    (the language files)
+    https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+
+As required by those licenses, we attribute GeoGebra and link to
+https://www.geogebra.org. Note that the CC BY-NC-SA terms on GeoGebra's
+language files restrict commercial use of those files. Users obtain GeoGebra
+directly from the official source under GeoGebra's own license terms; the MIT
+License above covers only the code in this repository.

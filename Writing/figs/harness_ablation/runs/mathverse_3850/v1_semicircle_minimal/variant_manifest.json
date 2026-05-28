@@ -1,0 +1,25 @@
+{
+  "variant": "v1_semicircle_minimal",
+  "note": "Minimal endpoint hint on add_semicircle p1/p2.",
+  "edits": [
+    {
+      "tool": "add_semicircle",
+      "param": "p1",
+      "description": "First endpoint of diameter (on the boundary, not the centre)"
+    },
+    {
+      "tool": "add_semicircle",
+      "param": "p2",
+      "description": "Second endpoint of diameter (on the boundary, not the centre)"
+    }
+  ],
+  "dataset": "mathverse",
+  "problem_id": "3850",
+  "data_dir": "/data/mathverse",
+  "model": "gemini-3-flash-preview@medium",
+  "thinking": "medium",
+  "ttft_timeout": 120,
+  "mode": "construct",
+  "source_policy": "Runtime ToolSpec overlay only; symbolic/tools source files are not modified by this runner. Source schema (GLOBAL + QUERY) is asserted unchanged after each run.",
+  "created_at": "2026-05-06 16:18:32"
+}

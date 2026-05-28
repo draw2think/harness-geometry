@@ -1,0 +1,19 @@
+{
+  "variant": "v8_negcontrol",
+  "note": "Negative control: edit add_function (unused by 3850 trajectory).",
+  "edits": [
+    {
+      "tool": "add_function",
+      "description_append": " Useful for plotting algebraic curves over a domain."
+    }
+  ],
+  "dataset": "mathverse",
+  "problem_id": "3850",
+  "data_dir": "/data/mathverse",
+  "model": "gemini-3-flash-preview@medium",
+  "thinking": "medium",
+  "ttft_timeout": 120,
+  "mode": "construct",
+  "source_policy": "Runtime ToolSpec overlay only; symbolic/tools source files are not modified by this runner. Source schema (GLOBAL + QUERY) is asserted unchanged after each run.",
+  "created_at": "2026-05-06 16:23:15"
+}

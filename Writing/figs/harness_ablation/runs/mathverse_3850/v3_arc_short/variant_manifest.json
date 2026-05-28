@@ -1,0 +1,19 @@
+{
+  "variant": "v3_arc_short",
+  "note": "Short-arc ordering hint on add_arc only.",
+  "edits": [
+    {
+      "tool": "add_arc",
+      "description_append": " For the shorter arc, choose start_pt and end_pt so the CCW sweep is the smaller sweep; otherwise swap them."
+    }
+  ],
+  "dataset": "mathverse",
+  "problem_id": "3850",
+  "data_dir": "/data/mathverse",
+  "model": "gemini-3-flash-preview@medium",
+  "thinking": "medium",
+  "ttft_timeout": 120,
+  "mode": "construct",
+  "source_policy": "Runtime ToolSpec overlay only; symbolic/tools source files are not modified by this runner. Source schema (GLOBAL + QUERY) is asserted unchanged after each run.",
+  "created_at": "2026-05-06 16:20:11"
+}

@@ -1,0 +1,72 @@
+{
+  "_comment": "Toy ablation of tool orchestration harness on MathVerse VO 3850 (img_770, 7-circle hexagonal shaded-area problem). Records ONLY the two tool descriptions actually edited across runs — add_semicircle and add_arc (the arc-family tools that share endpoint-and-direction semantics) — plus a separate CCW orientation analysis.",
+  "_target_problem": {
+    "dataset": "mathverse",
+    "id": "3850",
+    "image": "img_770.png",
+    "knowledge": "tangent circles + composite area decomposition (hexagonal packing)",
+    "expected_gt": 1.0,
+    "true_answer": "7/6 (~ 1.1667)",
+    "gt_correctness": "MathVerse VO labels GT=1.0 but the geometric truth is 7/6 — a benchmark GT-error case"
+  },
+  "tool_desc_evolution": {
+    "add_semicircle": {
+      "V0_baseline": {
+        "p1": "First endpoint of diameter",
+        "p2": "Second endpoint of diameter",
+        "observed_failure": "Model passes the circle's centre (e.g., C1) as p1/p2 instead of a boundary point, building a wrong-radius semicircle silently."
+      },
+      "V2_verbose": {
+        "p1": "First endpoint of diameter — must be a named point lying ON the boundary, not the centre. If the endpoint you need is not yet on the canvas, call add_point first at the correct coordinates.",
+        "p2": "Second endpoint of diameter — same rule as p1.",
+        "observed_effect": "Tool calls + 109% (11→23), thinking tokens still high (13172). Did not improve answer correctness (gave 1.5 via wrong region selection)."
+      },
+      "V3_minimal": {
+        "p1": "First endpoint of diameter (on the boundary, not the centre)",
+        "p2": "Second endpoint of diameter (on the boundary, not the centre)",
+        "observed_effect": "Tool calls + 245% (11→38, 0 fail), thinking tokens drop 70% (14351→4305), wall-time drops 54% (93s→42.6s); model self-corrects in Turn 2 by explicitly landing T1=(0,1) — the missing diameter endpoint."
+      }
+    },
+    "add_arc": {
+      "V0_baseline": {
+        "desc_excerpt": "Circular arc sweeping CCW from start_pt toward end_pt, with radius = Distance(center, start_pt). Note: end_pt does NOT need to lie on the circle — it only determines the end angle.",
+        "observed_failure": "Documented CCW behaviour but did not warn that 'CCW from A to B' may traverse the LONG arc (300°) instead of the SHORT one (60°) when the model expects the geometrically smaller region."
+      },
+      "V2_no_change": "Not edited in the V2 iteration.",
+      "V3_no_change": "Not edited in the V3 iteration.",
+      "todo": "Consider explicitly noting the CCW long-arc trap in a future ToolSpec edit, e.g., 'If the SHORT arc/sector is intended, choose start_pt and end_pt so that CCW traversal from start_pt to end_pt sweeps the smaller angle; otherwise SWAP them.'"
+    }
+  },
+  "ccw_perception_analysis": {
+    "phenomenon": "GeoGebra's CircularSector(O, P1, P2) and Arc(O, P1, P2) both traverse CCW from P1 to P2. When the human-intended sector is the SHORTER (≤180°) of the two possible sweeps, the model's text-level intuition often picks the wrong starting point and the engine returns the LONG-arc area instead.",
+    "concrete_examples_from_3850": [
+      {
+        "tool_call": "sector_PAB_central = CircularSector(P, A, B)",
+        "intended": "60° wedge from A=(0,3) clockwise to B=(2.6,1.5), area = 9π/6 = 4.71",
+        "engine_returned": "300° major sector (CCW from A around to B), area = 9π × 5/6 = 23.56",
+        "diagnosis": "Model thought 'CCW from 12 o'clock to 1:30 o'clock' = 60°, but engine traverses CCW = 300° around the long way."
+      },
+      {
+        "tool_call": "sector_central_correct = CircularSector(P_new, T1_new, T2_new_on_c_c)",
+        "intended": "60° sector at P with arc on c_central, area = π/6 ≈ 0.524",
+        "engine_returned": "300° major sector, area = 5π/6 ≈ 2.618",
+        "diagnosis": "Same CCW long-arc trap on Turn 2 retry; the model rebuilt geometry but did NOT swap arg order — never resolved CCW orientation conflict."
+      }
+    ],
+    "why_text_intuition_fails": [
+      "Human text 'sector PAB' is order-agnostic / symmetric. CCW direction is implicit in the engine's argument order P → A → B which the prompt does not foreground.",
+      "Model spends most thinking on geometry (which points to choose) rather than on traversal direction (which order to pass them in). The 'CCW from start to end' note in the docstring registers as a side-fact, not as an active selection criterion.",
+      "Even after observing a wrong area in Turn 1, the model rebuilt with the SAME argument order in Turn 2 — suggesting the CCW direction is not parsed as a knob the model controls."
+    ],
+    "minimal_potential_fix": "ToolSpec parameter wording could be sharpened from 'End point (CCW from start_pt)' to 'End point — CCW from start_pt; if the sector you want spans more than 180° from start_pt going CCW, you have the points swapped.' but this risks bloating the docstring and may not register (cf. the V1/V2 verbose-prompt experiments that timed out / over-broadcasted)."
+  },
+  "ablation_takeaways": [
+    "Adding a NEW rule at the prompt level (V1, dropped) makes the model overthink Turn 1 and exceed the 120s TTFT cap — instruction-level guidance has high cognitive cost.",
+    "Verbose ToolSpec advice (V2) drives more tool calls (11→23) but does NOT prevent region-selection error (model still chose secBig over the correct 7π/6 sum).",
+    "Minimal, surgical ToolSpec hint (V3) at the parameter level (6 words on add_semicircle p1/p2) cures the specific misuse and recovers correct answer with the LOWEST cost (think -70%, t_final -54%) and HIGHEST tool coverage (14→38).",
+    "Less-is-more: tool docstring brevity wins over verbosity. Per-parameter surgical hints land where the model parses them; verbose 'advice' bloats system context without proportional behaviour change.",
+    "Independent of all three tool-desc edits, the CCW long-arc trap persists — a perception issue tied to engine semantics, not to docstring wording. Likely needs an alternative interface (e.g., explicit 'angle_min/angle_max' params, or a wrapper that auto-selects the short-arc traversal).",
+    "Tol=0.01 surfaces a benchmark GT-error: the only geometrically-correct answers (V0, V3) both fail under strict tolerance because GT=1.0 is wrong; true answer is 7/6."
+  ],
+  "paper_use": "Appendix toy ablation of tool orchestration harness, supporting the §6 future-work framing that 'harness design — not raw model scale — is the lever' (e.g., a 6-word per-parameter ToolSpec tweak cuts thinking tokens ~70% and triples tool coverage). The CCW analysis becomes a separate hint that tool-surface DESIGN (argument ordering, parameter naming) is itself a reasoning channel — distinct from prompt-level instructions or per-call docstrings."
+}

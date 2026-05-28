@@ -1,0 +1,39 @@
+# Core dependencies
+numpy
+pandas
+
+# LLM APIs
+openai
+anthropic
+google-genai
+
+# Symbolic reasoning
+z3-solver
+sympy                # LaTeX expression parsing & numeric evaluation
+antlr4-python3-runtime==4.11.*  # sympy parse_latex backend
+math-verify          # HuggingFace standard math-answer verifier (Open LLM Leaderboard)
+
+# GeoGebra integration
+selenium
+webdriver-manager
+
+# Machine Learning (optional, for training)
+torch
+transformers
+datasets
+
+# Dataset download & loading
+huggingface_hub
+hf-xet             # Fast download backend (HF_HUB_ENABLE_HF_TRANSFER=1)
+pyarrow            # Parquet reader for HF datasets such as MathVision
+
+# Utilities
+pyyaml
+tqdm
+pillow
+
+# Development
+pytest
+black
+flake8
+mypy
