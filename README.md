@@ -91,7 +91,7 @@ Official key consoles: [Google AI Studio](https://aistudio.google.com/api-keys),
 
 Additional included in registry: [Moonshot Intl](https://platform.moonshot.ai/console/api-keys) / [CN](https://platform.moonshot.cn/console/api-keys), [Z.ai](https://z.ai/manage-apikey/apikey-list) / [BigModel CN](https://bigmodel.cn/apikey/platform), [DeepSeek](https://platform.deepseek.com/api_keys), [Alibaba Intl](https://modelstudio.console.alibabacloud.com/ap-southeast-1?tab=dashboard#/api-key) / [Bailian CN](https://bailian.console.alibabacloud.com/cn-beijing).
 
-> **Practical observation for stable reproducibility.** Use native provider keys for reported results. Low-price third-party proxies may lack quality guarantees and can introduce provider-side numerical or routing perturbations under the same model name, temperature-0 setting, and seed. Avoid unauthorized resellers for reproducibility and key-safety reasons.
+> **Practical observation for stable reproducibility.** Use native provider keys for reported results. Low-price third-party proxies may lack quality guarantees and can introduce provider-side numerical or routing perturbations even under the same model name, temperature-0 setting, and seed. Avoid unauthorized resellers for reproducibility and key-safety reasons.
 
 ### Datasets
 
@@ -179,10 +179,10 @@ Click any preview to open the GUI walkthrough with model traces, engine outputs,
 
 <table>
 <tr>
-<td width="25%" align="center"><a href="http://localhost:8765/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_1.gif" width="100%" alt="Pure analytic geometry without launching the canvas"></a></td>
-<td width="25%" align="center"><a href="http://localhost:8765/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_2.gif" width="100%" alt="GenExam trajectory with mid-process numerical correction"></a></td>
-<td width="25%" align="center"><a href="http://localhost:8765/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_3.gif" width="100%" alt="GeoGoal trajectory with dependent point adjustment"></a></td>
-<td width="25%" align="center"><a href="http://localhost:8765/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_4.gif" width="100%" alt="Hand-drawn sketch with an optimized prompt"></a></td>
+<td width="25%" align="center"><a href="http://draw2think.github.io/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_1.gif" width="100%" alt="Pure analytic geometry without launching the canvas"></a></td>
+<td width="25%" align="center"><a href="http://draw2think.github.io/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_2.gif" width="100%" alt="GenExam trajectory with mid-process numerical correction"></a></td>
+<td width="25%" align="center"><a href="http://draw2think.github.io/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_3.gif" width="100%" alt="GeoGoal trajectory with dependent point adjustment"></a></td>
+<td width="25%" align="center"><a href="http://draw2think.github.io/#demo"><img src="https://raw.githubusercontent.com/draw2think/draw2think.github.io/main/assets/demos/page_repo_gif_4.gif" width="100%" alt="Hand-drawn sketch with an optimized prompt"></a></td>
 </tr>
 </table>
 
